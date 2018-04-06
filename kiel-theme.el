@@ -32,13 +32,15 @@
  '(linum-format " %i "))
 
 (let ((background "#ffffff")
-      (region "#ebebea")
+      (region "#474350")
       (edge-background "#5c6d70")
       (edge-active "#ffffff")
       (edge-inactive "#353238")
       (text "#353238")
       (comments "#0086b3")
       (docstrings "#0086b3")
+      ;;(comments "#f02d3a")
+      ;;(docstrings "#a08fad")
       (strings "#9197ae")
       (keywords "#92140c")
       (builtins "#92140c")
@@ -54,20 +56,20 @@
    ;; Basic stuff
 
    `(default            ((t (:foreground ,text :background ,background))))
-   `(region             ((t (:background ,region))))
-   `(cursor             ((t (:foreground ,edge-active))))
+   `(region             ((t (:foreground ,background :background ,region))))
+   `(cursor             ((t (:background ,edge-background))))
    `(fringe             ((t (:foreground ,edge-active :background ,edge-background))))
    `(linum              ((t (:foreground ,edge-active :background ,edge-background))))
    `(mode-line          ((t (:foreground ,edge-active :background ,edge-background))))
    `(mode-line-inactive ((t (:foreground ,edge-inactive :background ,edge-background))))
-   `(hl-line            ((t (:foreground ,edge-active :background ,edge-background))))
+   `(hl-line            ((t (:background "#ffffff"))))
 
    ;; Font lock
 
    `(font-lock-comment-face           ((t (:foreground ,comments :slant italic))))
    `(font-lock-comment-delimiter-face ((t (:foreground ,comments :slant italic))))
-   `(font-lock-doc-string-face        ((t (:foreground ,docstrings :slant italic))))
-   `(font-lock-doc-face               ((t (:foreground ,docstrings :slant italic))))
+   `(font-lock-doc-string-face        ((t (:foreground ,docstrings :slant italic :weight bold))))
+   `(font-lock-doc-face               ((t (:foreground ,docstrings :slant italic :weight bold))))
    `(font-lock-string-face            ((t (:foreground ,strings))))
    `(font-lock-keyword-face           ((t (:foreground ,keywords :weight bold))))
    `(font-lock-builtin-face           ((t (:foreground ,builtins :weight bold))))
