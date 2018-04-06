@@ -37,7 +37,7 @@
       (edge-active "#ffffff")
       (edge-inactive "#353238")
       (text "#353238")
-      (comments "#f02d3a")
+      (comments "#0086b3")
       (docstrings "#0086b3")
       (strings "#9197ae")
       (keywords "#92140c")
