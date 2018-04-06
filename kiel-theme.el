@@ -45,7 +45,8 @@
       (constants "#0086b3")
       (types "#474350")
       (functions "#474350")
-      (variables "#474350"))
+      (variables "#474350")
+      (warning "#fff3b2"))
 
   (custom-theme-set-faces
    'kiel
@@ -74,6 +75,10 @@
    `(font-lock-constant-face          ((t (:foreground ,constants :weight bold))))
    `(font-lock-function-name-face     ((t (:foreground ,functions :weight bold))))
    `(font-lock-variable-name-face     ((t (:foreground ,variables :weight bold))))
+
+   ;; Flycheck
+
+   `(flycheck-warning ((t (:background ,warning))))
 
    ))
 
